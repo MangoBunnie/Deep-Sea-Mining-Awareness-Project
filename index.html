@@ -24,6 +24,17 @@
         .dark {
             background: #f5f5f5;
         }
+
+        /* Needed for submenu */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-left: 0.1rem;
+        }
     </style>
 </head>
 <body>
@@ -123,7 +134,7 @@
     </div>
 </section>
 
-<!-- ACTION (CLEAN DROPDOWN VERSION) -->
+<!-- ACTION (UPDATED ONLY SECTION) -->
 <section id="action" class="section dark">
     <div class="container text-center">
 
@@ -138,6 +149,7 @@
 
             <ul class="dropdown-menu">
 
+                <!-- EXISTING ACTIONS -->
                 <li>
                     <a class="dropdown-item" target="_blank" href="https://www.call2recycle.ca/">
                         Recycle Batteries (Find Locations)
@@ -145,47 +157,52 @@
                 </li>
 
                 <li>
-                    <a class="dropdown-item" target="_blank" href="https://www.greenpeace.org/international/act/">
-                        Support Ocean Protection (Greenpeace)
-                    </a>
-                </li>
-
-                <li>
                     <a class="dropdown-item" target="_blank" href="https://www.change.org/search?q=deep%20sea%20mining">
-                        Sign Petitions Against Deep Sea Mining
+                        Sign Environmental Petitions
                     </a>
                 </li>
 
                 <li><hr class="dropdown-divider"></li>
 
-                <li>
-                    <a class="dropdown-item" target="_blank" href="https://deep-sea-conservation.org/">
-                        Deep Sea Conservation Initiative
+                <!-- SUBMENU -->
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">
+                        Support Charities
                     </a>
-                </li>
 
-                <li>
-                    <a class="dropdown-item" target="_blank" href="https://stop-deep-sea-mining.org/">
-                        Stop Deep Sea Mining Campaign
-                    </a>
-                </li>
+                    <ul class="dropdown-menu">
 
-                <li>
-                    <a class="dropdown-item" target="_blank" href="https://dsm-campaign.org/">
-                        DSM Campaign Network
-                    </a>
-                </li>
+                        <li>
+                            <a class="dropdown-item" target="_blank" href="https://www.worldwildlife.org/">
+                                World Wildlife Fund
+                            </a>
+                        </li>
 
-                <li>
-                    <a class="dropdown-item" target="_blank" href="https://oceanfdn.org/deep-seabed-mining/">
-                        Ocean Foundation Resources
-                    </a>
-                </li>
+                        <li>
+                            <a class="dropdown-item" target="_blank" href="https://www.greenpeace.org/international/act/">
+                                Greenpeace
+                            </a>
+                        </li>
 
-                <li>
-                    <a class="dropdown-item" target="_blank" href="https://www.bluemarinefoundation.com/">
-                        Blue Marine Foundation
-                    </a>
+                        <li>
+                            <a class="dropdown-item" target="_blank" href="https://oceanfdn.org/deep-seabed-mining/">
+                                The Ocean Foundation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" target="_blank" href="https://www.bluemarinefoundation.com/">
+                                Blue Marine Foundation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" target="_blank" href="https://oceanconservancy.org/">
+                                Ocean Conservancy
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
             </ul>
